@@ -57,12 +57,13 @@ var pageState = {
  */
 function renderChart() {
     var div00 = document.getElementsByClassName("aqi-chart-wrap")[0];
-    
+    var colorStr = ["#aaa", "#111", "#222", "#333", "#444", "#555", "#666", "#777", "#888", "#999"];
     div00.innerHTML = "";
     for (var datStr in chartData) {
         var crtdiv = document.createElement("div");
         crtdiv.setAttribute("title", datStr + " 污染指数为： " + chartData[datStr]);
-        crtdiv.setAttribute("style", "height:" + chartData[datStr] + "px;" + "width:10px;background:black;display:inline-block");
+        var color = colorStr[Math.floor(Math.random() * 10)];
+        crtdiv.setAttribute("style", "height:" + chartData[datStr] + "px;" + "width:10px;background:" + color + ";display:inline-block");
         div00.appendChild(crtdiv);
     }
 }
