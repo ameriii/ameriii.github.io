@@ -63,6 +63,7 @@ function renderChart() {
         var crtdiv = document.createElement("div");
         crtdiv.setAttribute("title", datStr + " 污染指数为： " + chartData[datStr]);
         var color = colorStr[Math.floor(Math.random() * 10)];
+        //color = '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16); 用于随机颜色，html中加了border，遇到白色与背景相同无碍。
         crtdiv.setAttribute("style", "height:" + chartData[datStr] + "px;" + "background:" + color + ";display:inline-block");
         div00.appendChild(crtdiv);
     }
