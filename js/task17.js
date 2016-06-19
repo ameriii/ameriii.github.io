@@ -63,7 +63,7 @@ function renderChart() {
         var crtdiv = document.createElement("div");
         crtdiv.setAttribute("title", datStr + " 污染指数为： " + chartData[datStr]);
         var color = colorStr[Math.floor(Math.random() * 10)];
-        crtdiv.setAttribute("style", "height:" + chartData[datStr] + "px;" + "width:10px;background:" + color + ";display:inline-block");
+        crtdiv.setAttribute("style", "height:" + chartData[datStr] + "px;" + "background:" + color + ";display:inline-block");
         div00.appendChild(crtdiv);
     }
 }

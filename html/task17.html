@@ -3,6 +3,23 @@
 <head>
     <meta charset="utf-8">
     <title>IFE JavaScript Task 01</title>
+    <style>
+        .aqi-chart-wrap {
+            border: 2px solid #000;
+            width: 90%;
+            height: 550px;
+            margin: 10px auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            align-content: center;
+        }
+
+            .aqi-chart-wrap div {
+                flex: 1;
+            }
+    </style>
 
 </head>
 <body>
@@ -15,16 +32,14 @@
 
     <fieldset>
         <legend>请选择查看的城市：</legend>
-        <select id="city-select" >
+        <select id="city-select">
             <!--<option value="">请选择城市</option>-->
-           
+
 
         </select>
     </fieldset>
 
-    <div class="aqi-chart-wrap" style="border:2px solid yellow;width:1000px;height:550px;margin:10px auto;display: flex;
-  justify-content: center;
-  align-items: flex-end;">
+    <div class="aqi-chart-wrap">
 
     </div>
 
