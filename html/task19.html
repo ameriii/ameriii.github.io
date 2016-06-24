@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>task19</title>
+    <style type="text/css">
+        [type=button][name=leftout] {
+            margin-left: 25px;
+        }
+
+        [type=button][name=rightout] {
+            margin-right: 25px;
+        }
+
+        #list {
+            margin-top: 20px;
+            padding:0 5px;
+            display: flex;
+            flex-wrap: nowrap;
+            //justify-content: center;
+            align-items: flex-end;
+            width: 1100px;
+            height: 350px;
+            border: 1px solid black;
+        }
+
+            #list div {
+                font-size:12px;
+                color:white;
+                display: flex;
+                justify-content: center;
+                background-color: red;
+                margin: 0 1px;
+                width: 20px;
+            }
+    </style>
+</head>
+<body>
+    <input type="text" />
+    <button type="button" name="leftin">左侧入</button>
+    <button type="button" name="rightin">右侧入</button>
+    <button type="button" name="leftout">左侧出</button>
+    <button type="button" name="rightout">右侧出</button>
+    <button type="button" name="random">随机生成</button>
+    <button type="button" name="bubbleSort">冒泡排序</button>
+
+    <div id="list"></div>
+
+
+    <script type="text/javascript" src="../js/task19.js"></script>
+
+</body>
+</html>
