@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>task-22</title>
+		<style type="text/css">
+			#root {
+				width: 80%;
+				height: 400px;
+				border: 1px solid black;
+				display: flex;
+				flex-direction: row;
+			}
+			
+			#root> div {
+				border: 1px solid black;
+				margin: 20px;
+				flex-grow: 1;
+				display: flex;
+			}
+			
+			#root> div> div {
+				border: 1px solid black;
+				margin: 20px;
+				flex-grow: 1;
+				display: flex;
+			}
+			
+			#root> div> div> div {
+				border: 1px solid black;
+				margin: 20px;
+				flex-grow: 1;
+			}
+			
+			button {
+				margin-top: 30px;
+				width: 60px;
+				height: 40px;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload = function() {
+				var arr = [];
+				var divArr = document.getElementsByTagName('div');
+				var rootNode = document.getElementById('root');
+				var buttonArr = document.getElementsByTagName('button')
+				var parent = rootNode;
+				var current = parent.firstElementChild;
+				var timer = null;
+				//前序
+				function preOrder() {
+					
+					while(true) {
+						console.log(arr)
+							//					console.log(parent,current);
+						if(current.firstElementChild != null) {
+							arr.push(parent);
+							parent = current;
+							current = parent.firstElementChild;
+							//						continue ;
+						} else {
+							arr.push(parent);
+							arr.push(current);
+
+							if(parent.childElementCount == 2) {
+								arr.push(parent.lastElementChild);
+							}
+							if(parent.nextElementSibling) {
+								parent = parent.nextElementSibling;
+								current = parent.firstElementChild;
+							} else {
+								parent = parent.parentNode.nextElementSibling;
+								if(parent == null) {
+									console.log('遍历完成');
+									startTraverse();
+									break;
+								}
+								current = parent.firstElementChild;
+							}
+
+						}
+
+					}
+				}
+				
+				
+				//中序
+				function inOrder(node){
+					if(node!==null){
+						inOrder(node.firstElementChild);
+						arr.push(node);
+						inOrder(node.lastElementChild);
+					}
+				}
+				
+
+				//后序
+				function postOrder(node){
+					if(node!==null){
+						postOrder(node.firstElementChild);
+						postOrder(node.lastElementChild);
+						arr.push(node);
+					}
+				}
+				
+				function startTraverse() {
+					var i = 0;
+					timer = setInterval(function() {
+						//清除所有背景色
+						//						for(var q =0;q<divArr.length;q++){
+						//							divArr[q].style.backgroundColor = 'initial';
+						//						}
+						if(i > 0) {
+							arr[i - 1].style.backgroundColor = 'initial';
+						}
+
+						if(i >= arr.length) {
+							clearInterval(timer);
+							console.log("gg");
+							return;
+						}
+						arr[i].style.backgroundColor = 'rgba(255,0,0,0.6)';
+						i++;
+					}, 500)
+				}
+
+				buttonArr[0].onclick = function() {
+					arr = [];
+					preOrder();
+				}
+				buttonArr[1].onclick = function() {
+					arr = [];
+					inOrder(rootNode);
+					console.log(arr);
+					startTraverse();
+				}
+				buttonArr[2].onclick = function() {
+					arr = [];
+					postOrder(rootNode);
+					console.log(arr);
+					startTraverse();
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="root">
+			<div>
+				<div>
+					<div></div>
+					<div></div>
+
+				</div>
+				<div>
+					<div></div>
+					<div></div>
+
+				</div>
+			</div>
+			<div>
+				<div>
+					<div></div>
+					<div></div>
+
+				</div>
+				<div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<button>前序</button>
+	<button>中序</button>
+	<button>后序</button>
+
+</html>
