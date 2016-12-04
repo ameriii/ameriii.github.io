@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>task25</title>
+		<style type="text/css">
+			div{
+				border: 1px solid gray;
+				padding: 10px;
+				margin: 10px;
+			}
+			.changeColor{
+				background: rgba(255,0,0,0.6);
+			}
+			.target{
+				background: rgba(0,0,200,0.6);
+			}
+			#root{
+				/*border: 1px solid gray;*/
+
+				width: 300px;
+				margin: 10px auto;
+			}
+			.tag{
+				display: inline-block;
+				padding: 0px 3px;
+				border: 1px solid black;
+				margin-right: 5px;
+				cursor: pointer;
+				font-weight: bold;
+			}
+		</style>
+		<script src="../js/task25.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<button>前序遍历</button>
+		<input type="text" name="search" id="search" placeholder="请输入查询字符串" />		
+		<button>查询</button>
+		<br />
+		<br />
+		<button>删除节点及子节点</button>
+		<input type="text" name="add" id="add" placeholder="请输入添加的节点内容" />		
+		<button>添加子节点</button>
+		
+		<div id="root">
+			<span class="tag">+</span>产品
+			<div>
+				<span class="tag">+</span>手机
+				<div style="display: none;">
+					<span class="tag">+</span>Apple
+					<div><span class="tag">+</span>iphone4</div>
+					<div><span class="tag">+</span>iphone4s</div>
+					<div><span class="tag">+</span>iphone5</div>
+					<div><span class="tag">+</span>iphone5s</div>
+				</div>
+				<div style="display: none;"><span class="tag">+</span>Samsung</div>
+				<div style="display: none;">
+					<span class="tag">+</span>Huawei
+					<div><span class="tag">+</span>honor6</div>
+					<div><span class="tag">+</span>honor7</div>
+				</div>
+			</div>
+			<div>
+				<span class="tag">+</span>电脑
+				<div style="display: none;">
+					<span class="tag">+</span>lenovo
+					<div><span class="tag">+</span>Thinkpad</div>
+					<div><span class="tag">+</span>Air16</div>
+					<div><span class="tag">+</span>Y50p</div>
+				</div>
+				<div style="display: none;">
+					<span class="tag">+</span>Hasee
+					<div>
+						<span class="tag">+</span>战神
+						<div><span class="tag">+</span>k610d</div>
+					</div>
+					<div><span class="tag">+</span>飞天</div>
+				</div>
+			</div>
+			<div>
+				<span class="tag">+</span>家电
+				<div style="display: none;"><span class="tag">+</span>洗衣机</div>
+				<div style="display: none;"><span class="tag">+</span>冰箱</div>
+			</div>
+		</div>
+	</body>
+</html>
