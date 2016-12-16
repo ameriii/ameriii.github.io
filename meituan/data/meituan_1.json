@@ -1,0 +1,34 @@
+[
+  {
+    "lPic":"img/pic_1.png",
+    "deal":"正新鸡排-json",
+    "title":"[json]【官方】正新鸡排尊享版单人餐",
+    "strong":"666",
+    "oldprice":"门市价:555元",
+    "num":"已售111111111"
+  },
+  {
+    "lPic":"img/pic_2.jpg",
+    "deal":"正新鸡排-json",
+    "title":"[json]【官方】正新鸡排尊享版单人餐",
+    "strong":"666",
+    "oldprice":"门市价:666元",
+    "num":"已售22222222"
+  },
+  {
+    "lPic":"img/pic_3.png",
+    "deal":"正新鸡排-json",
+    "title":"[json]【官方】正新鸡排尊享版单人餐",
+    "strong":"666",
+    "oldprice":"门市价:777元",
+    "num":"已售666666"
+  },
+  {
+    "lPic":"img/pic_4.png",
+    "deal":"正新鸡排-json",
+    "title":"[json]【官方】正新鸡排尊享版单人餐",
+    "strong":"666",
+    "oldprice":"门市价:888元",
+    "num":"已售888888"
+  }
+]

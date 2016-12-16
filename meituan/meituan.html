@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= device-width,initial-scale=1">
+    <title>meituan</title>
+
+    <link rel="stylesheet" type="text/css" href="css/header-footer.css">
+    <link rel="stylesheet" type="text/css" href="css/meituan.css">
+    <link rel="stylesheet" type="text/css" href="swiper/swiper-3.4.0.min.css">
+    <link rel="stylesheet" type="text/css" href="css/rotate.css">
+    
+    <script src="fonts/iconfont.js"></script>
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="swiper/swiper-3.4.0.min.js"></script>
+    <script src="js/meituan.js"></script>
+
+</head>
+<body>
+<header class="navBar">
+    <div class="nav-left nogo">
+
+        <a href="#" class="city">
+            <span>深圳</span> <i>
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-moreunfold"></use>
+            </svg>
+        </i>
+        </a>
+    </div>
+    <div class="nav-search">
+        <i>
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-sousuo_sousuo"></use>
+            </svg>
+        </i> <input type="text" placeholder="输入商家/品类/商圈"/>
+    </div>
+    <div class="nav-right">
+        <a href="#">
+            <i>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-account"></use>
+                </svg>
+            </i> <span>我的</span>
+        </a>
+    </div>
+</header>
+
+<!--轮播图-->
+<div class="carousel">
+    <div class="swiper-container swiper-container-horizontal">
+        <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+            <div class="swiper-slide swiper-slide-active list1">
+                <dl>
+                    <div class="items items1">
+                        <dt><i class="iconfont">&#xe610;</i></dt>
+                        <dd>美食</dd>
+                    </div>
+                    <div class="items items2">
+                        <dt><i class="iconfont">&#xe60d;</i></dt>
+                        <dd>电影</dd>
+                    </div>
+                    <div class="items items3">
+                        <dt><i class="iconfont">&#xe600;</i></dt>
+                        <dd>酒店</dd>
+                    </div>
+                    <div class="items items4">
+                        <dt><i class="iconfont">&#xe6a1;</i></dt>
+                        <dd>休闲娱乐</dd>
+                    </div>
+                    <div class="items items5">
+                        <dt><i class="iconfont">&#xe62c;</i></dt>
+                        <dd>外卖</dd>
+                    </div>
+                    <div class="items items6">
+                        <dt><i class="iconfont">&#xe614;</i></dt>
+                        <dd>KTV</dd>
+                    </div>
+                    <div class="items items7">
+                        <dt><i class="iconfont">&#xe613;</i></dt>
+                        <dd>周边游</dd>
+                    </div>
+                    <div class="items items8">
+                        <dt><i class="iconfont">&#xe606;</i></dt>
+                        <dd>丽人</dd>
+                    </div>
+                    <div class="items items9">
+                        <dt><i class="iconfont">&#xe6e0;</i></dt>
+                        <dd>小吃快餐</dd>
+                    </div>
+                    <div class="items items10">
+                        <dt><i class="iconfont">&#xe628;</i></dt>
+                        <dd>机票/火车票</dd>
+                    </div>
+
+                </dl>
+
+            </div>
+            <div class="swiper-slide swiper-slide-next list2">
+                <dl>
+                    <div class="items items1">
+                        <dt><i class="iconfont">
+                            &#xe67b;</i></dt>
+                        <dd>生活服务</dd>
+                    </div>
+                    <div class="items items2">
+                        <dt><i class="iconfont">
+                            &#xe62e;</i></dt>
+                        <dd>今日新单</dd>
+                    </div>
+                    <div class="items items3">
+                        <dt><i class="iconfont">
+                            &#xe61c;</i></dt>
+                        <dd>足疗按摩</dd>
+                    </div>
+                    <div class="items items4">
+                        <dt><i class="iconfont">&#xe603;</i></dt>
+                        <dd>甜点饮品</dd>
+                    </div>
+                    <div class="items items5">
+                        <dt><i class="iconfont">
+                            &#xe7bd;</i></dt>
+                        <dd>婚纱摄影</dd>
+                    </div>
+                    <div class="items items6">
+                        <dt><i class="iconfont">
+                            &#xe6f1;</i></dt>
+                        <dd>母婴亲子</dd>
+                    </div>
+                    <div class="items items7">
+                        <dt><i class="iconfont">&#xe691;</i></dt>
+                        <dd>学习培训</dd>
+                    </div>
+                    <div class="items items8">
+                        <dt><i class="iconfont">
+                            &#xe602;</i></dt>
+                        <dd>结婚</dd>
+                    </div>
+                    <div class="items items9">
+                        <dt><i class="iconfont">&#xe637;</i></dt>
+                        <dd>家装</dd>
+                    </div>
+                    <div class="items items10">
+                        <dt><i class="iconfont">&#xe62a;</i></dt>
+                        <dd>全部分类</dd>
+                    </div>
+
+                </dl>
+
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets changeColor">
+            <span class="swiper-pagination-bullet"></span> <span class="swiper-pagination-bullet"></span>
+
+        </div>
+    </div>
+
+</div>
+
+<!--4格推荐-->
+<!--<div class="daogou">-->
+    <!--<div class="dleft">-->
+        <!--<div class="box">-->
+            <!--<strong>我们约吧</strong> <span>恋人家人好朋友</span> <span><img src="img/pic_1.png" alt=""></span>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="dright">-->
+        <!--<div class="recommend1">-->
+            <!--<div class="box">-->
+                <!--<strong>低价超值</strong> <span>十元惠生活</span>-->
+            <!--</div>-->
+            <!--<span><img src="img/pic_2.jpg" alt=""></span>-->
+        <!--</div>-->
+        <!--<div class="box3">-->
+            <!--<div class="recommend2">-->
+                <!--<strong>聚餐宴请</strong> <span>朋友家人常聚聚</span> <span><img src="img/pic_3.png" alt=""></span>-->
+            <!--</div>-->
+            <!--<div class="recommend3">-->
+                <!--<strong>名店抢购</strong> <span>距离结束</span>-->
+                <!--<span>-->
+
+                <!--</span>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<div class="wudi">
+    <div class="wrapperBox">
+        <div class="rotateBox">
+            <div>
+                <div class="daogou">
+                    <div class="dleft">
+                        <div class="box">
+                            <strong>我们约吧</strong> <span>恋人家人好朋友</span> <span><img src="img/pic_1.png" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="dright">
+                        <div class="recommend1">
+                            <div class="box">
+                                <strong>低价超值</strong> <span>十元惠生活</span>
+                            </div>
+                            <span><img src="img/pic_2.jpg" alt=""></span>
+                        </div>
+                        <div class="box3">
+                            <div class="recommend2">
+                                <strong>聚餐宴请</strong> <span>朋友家人常聚聚</span> <span><img src="img/pic_3.png" alt=""></span>
+                            </div>
+                            <div class="recommend3">
+                                <strong>名店抢购</strong> <span>距离结束</span> <span>
+
+                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="daogou">
+                    <div class="dleft">
+                        <div class="box">
+                            <strong>我们约吧</strong> <span>恋人家人好朋友</span> <span><img src="img/pic_1.png" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="dright">
+                        <div class="recommend1">
+                            <div class="box">
+                                <strong>低价超值</strong> <span>十元惠生活</span>
+                            </div>
+                            <span><img src="img/pic_2.jpg" alt=""></span>
+                        </div>
+                        <div class="box3">
+                            <div class="recommend2">
+                                <strong>聚餐宴请</strong> <span>朋友家人常聚聚</span> <span><img src="img/pic_3.png" alt=""></span>
+                            </div>
+                            <div class="recommend3">
+                                <strong>名店抢购</strong> <span>距离结束</span> <span>
+
+                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="daogou">
+                    <div class="dleft">
+                        <div class="box">
+                            <strong>我们约吧</strong> <span>恋人家人好朋友</span> <span><img src="img/pic_1.png" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="dright">
+                        <div class="recommend1">
+                            <div class="box">
+                                <strong>低价超值</strong> <span>十元惠生活</span>
+                            </div>
+                            <span><img src="img/pic_2.jpg" alt=""></span>
+                        </div>
+                        <div class="box3">
+                            <div class="recommend2">
+                                <strong>聚餐宴请</strong> <span>朋友家人常聚聚</span> <span><img src="img/pic_3.png" alt=""></span>
+                            </div>
+                            <div class="recommend3">
+                                <strong>名店抢购</strong> <span>距离结束</span> <span>
+
+                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="daogou">
+                    <div class="dleft">
+                        <div class="box">
+                            <strong>我们约吧</strong> <span>恋人家人好朋友</span> <span><img src="img/pic_1.png" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="dright">
+                        <div class="recommend1">
+                            <div class="box">
+                                <strong>低价超值</strong> <span>十元惠生活</span>
+                            </div>
+                            <span><img src="img/pic_2.jpg" alt=""></span>
+                        </div>
+                        <div class="box3">
+                            <div class="recommend2">
+                                <strong>聚餐宴请</strong> <span>朋友家人常聚聚</span> <span><img src="img/pic_3.png" alt=""></span>
+                            </div>
+                            <div class="recommend3">
+                                <strong>名店抢购</strong> <span>距离结束</span> <span>
+
+                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--猜你喜欢-->
+<div class="guess">
+    <div class="wrapper">
+        <dl>
+            <dt>猜你喜欢</dt>
+            <dd class="hot copyitem">
+                <div class="lPic"><img src="img/pic_4.png" alt=""></div>
+                <div class="rContent">
+                    <div class="deal">正新鸡排</div>
+                    <div class="title">[全国]【官方】正新鸡排尊享版单人餐</div>
+                    <div class="price"><span><strong>9.5</strong><i>元</i>门市价:20元</span><span>已售12015052</span></div>
+                </div>
+            </dd>
+            <dd class="hot">
+                <div class="lPic"><img src="img/pic_5.png" alt=""></div>
+                <div class="rContent">
+                    <div class="deal">正新鸡排</div>
+                    <div class="title">[全国]【官方】正新鸡排尊享版单人餐</div>
+                    <div class="price"><span><strong>9.5</strong><i>元</i>门市价:20元</span><span>已售12015052</span></div>
+                </div>
+            </dd>
+            <dd>
+                <div class="lPic"><img src="img/pic_6.jpg" alt=""></div>
+                <div class="rContent">
+                    <div class="deal">正新鸡排</div>
+                    <div class="title">[全国]【官方】正新鸡排尊享版单人餐</div>
+                    <div class="price"><span><strong>9.5</strong><i>元</i>门市价:20元</span><span>已售12015052</span></div>
+                </div>
+            </dd>
+            <dd>
+                <div class="lPic"><img src="img/pic_11.jpg" alt=""></div>
+                <div class="rContent">
+                    <div class="deal">正新鸡排</div>
+                    <div class="title">[全国]【官方】正新鸡排尊享版单人餐</div>
+                    <div class="price"><span><strong>9.5</strong><i>元</i>门市价:20元</span><span>已售12015052</span></div>
+                </div>
+            </dd>
+            <dd class="hot">
+                <div class="lPic"><img src="img/pic_7.jpg" alt=""></div>
+                <div class="rContent">
+                    <div class="deal">正新鸡排</div>
+                    <div class="title">[全国]【官方】正新鸡排尊享版单人餐</div>
+                    <div class="price"><span><strong>9.5</strong><i>元</i>门市价:20元</span><span>已售12015052</span></div>
+                </div>
+            </dd>
+            <dd >
+                <div class="lPic"><img src="img/pic_8.jpg" alt=""></div>
+                <div class="rContent">
+                    <div class="deal">正新鸡排</div>
+                    <div class="title">[全国]【官方】正新鸡排尊享版单人餐</div>
+                    <div class="price"><span><strong>9.5</strong><i>元</i>门市价:20元</span><span>已售12015052</span></div>
+                </div>
+            </dd>
+            <dd >
+                <div class="lPic"><img src="img/pic_9.jpg" alt=""></div>
+                <div class="rContent">
+                    <div class="deal">正新鸡排</div>
+                    <div class="title">[全国]【官方】正新鸡排尊享版单人餐</div>
+                    <div class="price"><span><strong>9.5</strong><i>元</i>门市价:20元</span><span>已售12015052</span></div>
+                </div>
+            </dd>
+            <dd class="hot">
+                <div class="lPic"><img src="img/pic_10.jpg" alt=""></div>
+                <div class="rContent">
+                    <div class="deal">正新鸡排</div>
+                    <div class="title">[全国]【官方】正新鸡排尊享版单人餐</div>
+                    <div class="price"><span><strong>9.5</strong><i>元</i>门市价:20元</span><span>已售12015052</span></div>
+                </div>
+            </dd>
+            <p class="more">
+                <span>查看全部团购</span> <i class="iconfont">&#xe6a6;</i>
+            </p>
+        </dl>
+    </div>
+</div>
+<!--登录注册-->
+<footer>
+    <div class="footer-bar">
+        <div>
+            <a href="#" class="login">登录</a>
+            <a href="#" class="register">注册</a>
+        </div>
+        <div>
+            <span>城市:</span>
+            <a href="#" class="address">深圳</a>
+
+        </div>
+    </div>
+    <div class="footer-nav">
+        <ul>
+            <li>
+                <a href="#">首页</a>
+            </li>
+            <li>
+                <a href="#">订单</a>
+            </li>
+            <li>
+                <a href="#">美团下载</a>
+            </li>
+            <li>
+                <a href="#">电脑版</a>
+            </li>
+            <li>
+                <a href="#">帮助</a>
+            </li>
+        </ul>
+    </div>
+    <div class="footer-links">
+        友情链接：
+        <a href="#">猫眼电影</a>
+        <a href="#">大众点评</a>
+        <a href="#">大众点评下载</a>
+    </div>
+    <div class="footer-copyright">
+        <div class="hr"></div>
+<span><i>©</i>2016 美团网 京ICP证070791号</span>
+    </div>
+</footer>
+<div class="top-btn">
+    <i class="iconfont">&#xe604;</i>
+</div>
+</body>
+</html>

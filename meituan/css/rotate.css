@@ -1,0 +1,88 @@
+.wudi{
+/*box-sizing:border-box;*/
+position:relative;
+/*display:flex;*/
+margin: .10rem 0;
+
+width:100%;
+height:1.5rem;
+}
+.wrapperBox{
+/*width:560px;*/
+/*margin:100px auto;*/
+/*height:500px;*/
+/*width:25%;*/
+position:relative;
+overflow:hidden;
+display:flex;
+height:100%;
+}
+.rotateBox{
+position:absolute;
+width:100%;
+height:1.5rem;
+transform-style:preserve-3d;
+transition:transform 2s linear;
+}
+
+.rotateBox > div{
+width:100%;
+height:1.5rem;
+overflow:hidden;
+}
+/*.rotateBox div*/
+.rotateBox > div >div{
+height:1.5rem;
+padding:0;
+margin: 0 ;
+}
+
+.rotateBox:nth-child(2) >div>div{
+position:absolute;
+display:block;
+/*left:-25%;*/
+}
+.rotateBox:nth-child(3) >div>div{
+position:absolute;
+display:block;
+/*left:-50%;*/
+}
+.rotateBox:nth-child(4) >div>div{
+position:absolute;
+display:block;
+/*left:-75%;*/
+}
+.rotateBox>div{
+position:absolute;
+}
+.rotateBox >div:nth-child(1){
+transform:translateZ(150px);
+}
+.rotateBox >div:nth-child(2){
+transform:rotateX(90deg) translateZ(.75rem);
+}
+.rotateBox >div:nth-child(3){
+transform:rotateX(180deg) translateZ(.75rem);
+}
+.rotateBox >div:nth-child(4){
+transform:rotateX(-90deg) translateZ(.75rem);
+}
+.rotateBox:nth-child(1){
+animation:move 3s forwards;
+}
+.rotateBox:nth-child(2){
+animation:move 3s 0.3s forwards;
+}
+.rotateBox:nth-child(3){
+animation:move 3s 0.6s forwards;
+}
+.rotateBox:nth-child(4){
+animation:move 3s 0.9s forwards;
+}
+@keyframes move{
+from{
+}
+to{
+transform:rotateX(-360deg);
+}
+}

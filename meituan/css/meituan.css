@@ -1,0 +1,289 @@
+
+
+/*轮播图*/
+.changeColor span{
+background-color: #06c1ae !important;
+}
+
+.swiper-container{
+padding-bottom:.2rem;
+background:white;
+}
+.swiper-slide dl{
+display:flex;
+flex-wrap:wrap;
+}
+.swiper-slide dl .items{
+width:20%;
+text-align:center;
+display:flex;
+flex-direction:column;
+align-items:center;
+color:white;
+margin:.1rem 0;
+}
+.swiper-slide dl .items i{
+display:inline-block;
+font-size:.4rem;
+line-height:.4rem;
+/*height:.4rem;*/
+
+}
+.swiper-slide dl dt{
+border-radius: 50%;
+height:.6rem;
+width: .6rem;
+display:flex;
+align-items:center;
+justify-content:center;
+background:gray;
+margin-bottom:.08rem;
+}
+.swiper-slide dl dd{
+
+font-size:.12rem;
+color: #666;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets  span.swiper-pagination-bullet {
+margin: 0 .1rem;
+}
+
+.list1 .items1 dt{
+background: #fd9d21;
+}
+.list1 .items2 dt{
+background: #ff6767;
+}
+.list1 .items3 dt{
+background: #8a90fa;
+}
+.list1 .items4 dt{
+background: #fed030;
+}
+.list1 .items5 dt{
+background: #fd9d21;
+}.list1 .items6 dt{
+ background: #fed030;
+ }
+.list1 .items7 dt{
+background: #4dc6ee;
+}
+.list1 .items8 dt{
+background: #ff80c2;
+}.list1 .items9 dt{
+ background: #fd9d21;
+ }.list1 .items10 dt{
+  background: #599eec;
+  }
+
+
+.list2 .items1 dt{
+background: #A8DD99;
+}
+.list2 .items2 dt{
+background: #00d3be;
+}
+.list2 .items3 dt{
+background: #fed030;
+}.list2 .items4 dt{
+ background: #fd9d21;
+ }
+.list2 .items5 dt{
+background: #FF7360;
+}
+.list2 .items6 dt{
+background: #ff80c2;
+}
+.list2 .items7 dt{
+background: #84d23d;
+}
+.list2 .items8 dt{
+background: #ff80c2;
+}
+.list2 .items9 dt{
+background: #599eec;
+}
+.list2 .items10 dt{
+background: #00d3be;
+}
+
+/*导购栏*/
+.daogou{
+display:flex;
+margin-top:.1rem;
+background:white;
+padding:.06rem;
+}
+.daogou .dleft{
+width:33.4%;
+text-align:center;
+border-right: .01rem solid #ddd8ce;
+margin:.05rem;
+display:flex;
+justify-content:center;
+box-sizing:border-box;
+height:1.4rem;
+}
+.box{
+display:flex;
+flex-direction:column;
+align-items:flex-start;
+}
+.daogou strong,.daogou span{
+display:block;
+}
+.daogou strong{
+font-size:.15rem;
+color: #55a40f;
+margin:.1rem 0 ;
+/*text-align:left;*/
+}
+
+.daogou span{
+color: #666;
+font-size:.12rem;
+}
+.dleft img{
+display:block;
+width:.88rem;
+}
+
+.dright{
+width:66.6%;
+box-sizing:border-box;
+padding-right:.1rem;
+
+}
+.dright .recommend1{
+width:100%;
+display:flex;
+margin-right: .1rem;
+border-bottom: .01rem solid #ddd8ce;
+justify-content:center;
+height:.74rem;
+
+}
+.recommend1 strong{
+color: #ff3f0d;
+}
+.recommend1 img{
+width:.65rem;
+height:.65rem;
+}
+.box3{
+width:100%;
+height:.75rem;
+display:flex;
+/*justify-content:space-around;*/
+}
+.recommend2{
+width:50%;
+border-right: .01rem solid #ddd8ce;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+.recommend2 strong{
+margin:.05rem 0;
+color: #f742a0;
+}
+.recommend2 img{
+vertical-align:top;
+width:.4rem;
+height:.4rem;
+}
+.recommend3{
+width:50%;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+/*猜你喜欢*/
+.guess{
+background:white;
+margin-top:.1rem;
+padding-left:.1rem;
+}
+.guess dt{
+font-size:.17rem;
+padding:.14rem 0 .10rem;
+border-bottom: .01rem solid #ddd8ce;
+}
+.guess dd{
+margin:.1rem 0;
+display:flex;
+padding-right:.1rem;
+border-bottom: .01rem solid #ddd8ce;
+padding-bottom:.1rem;
+position:relative;
+overflow:hidden;
+}
+.lPic img{
+display:block;
+width:.9rem;
+height:.90rem;
+}
+.guess dd > div{
+height:.82rem;
+overflow:hidden;
+}
+.rContent{
+padding-left:.1rem;
+flex-grow:1;
+}
+.rContent .deal{
+font-size:.15rem;
+padding:.05rem 0 .07rem;
+
+}
+.rContent .title{
+font-size:.12rem;
+color: #666;
+padding-bottom:.15rem;
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+}
+.price{
+display:flex;
+justify-content:space-between;
+}
+.price>span{
+font-size:.12rem;
+color: #666;
+}
+.price>span strong{
+color: #06c1ae;
+font-size:.19rem;
+}
+.price>span i{
+font-size: .13rem;
+color: #06c1ae;
+padding-right:.05rem;
+
+}
+.hot:before{
+content:'免预约';
+font-size:.1rem;
+display:block;
+position:absolute;
+padding:0 .2rem;
+top:0;
+left:0;
+background-color:#06c1ae;
+color:white;
+transform:rotate(-45deg) translate(-.25rem,-.05rem);
+}
+
+.more{
+color: #06c1ae;
+font-size:.15rem;
+padding:0rem .1rem  .12rem 0;
+border-bottom: .01rem solid #ddd8ce;
+display:flex;
+justify-content:space-between;
+}
+.more i{
+transform:rotate(-90deg);
+}

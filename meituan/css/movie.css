@@ -1,0 +1,99 @@
+.list dd > div {
+height: .62rem;
+overflow: hidden;
+}
+.rContent .deal {
+font-size: .18rem;
+padding: .05rem 0 .07rem;
+color: #333;
+line-height:.2rem;
+}
+.list dd {
+padding:.1rem 0;
+margin-top:0;
+margin-bottom:0;
+}
+.more{
+padding-top:.1rem;
+}
+
+/*电影列表*/
+.hotlist{
+background:white;
+padding:.1rem;
+padding-bottom:0;
+}
+.title{
+font-size: .16rem;
+height: .21rem;
+display:flex;
+justify-content:space-between;
+}
+.title span:first-child{
+color: #333;
+}
+.title span:last-child{
+color: #999;
+font-size:.12rem;
+}
+.hotcontent{
+padding-top: .1rem ;
+
+}
+.hotcontent ul{
+display:flex;
+overflow-x:scroll;
+
+}
+/**/
+.hotcontent ul::-webkit-scrollbar{
+width:.1rem;
+}
+.hotcontent ul::-webkit-scrollbar-track{
+background-color:#f0efed;
+}
+.hotcontent ul::-webkit-scrollbar-button{
+background-color:#f0efed;
+}
+.hotcontent ul::-webkit-scrollbar-thumb{
+background-color:#f0efed;
+}
+
+
+.hotcontent li{
+width:.87rem;
+overflow:hidden;
+flex-shrink:0;
+}
+.hotcontent li+li{
+margin-left:.1rem;
+margin-bottom:.1rem;
+}
+.hotcontent li img{
+ display:block;
+width:.87rem;
+height:1.22rem;
+padding-bottom:.05rem;
+}
+.hotcontent li h4{
+font-size:.14rem;
+line-height:.2rem;
+overflow:hidden;
+white-space:nowrap;
+text-overflow:ellipsis;
+}
+.hotcontent li div{
+font-size:.12rem;
+overflow:hidden;
+white-space:nowrap;
+text-overflow:ellipsis;
+line-height:.18rem;
+color: #F90;
+}
+
+.nav-bar{
+
+ border-top: 1px solid #f0efed;
+}
+
+
