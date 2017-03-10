@@ -1,0 +1,479 @@
+.brandSection .browseInfo {
+	margin-top: 0px;
+}
+
+.productInfo {
+	width: 1190px;
+	margin-bottom: 20px;
+	position: relative;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.preView {
+	float: left;
+	width: 362px;
+	position: relative;
+	z-index: 4;
+}
+
+.preView .viewPic {
+	width: 350px;
+	height: 350px;
+	position: relative;
+	padding: 0;
+	border: 1px solid #ccc;
+}
+
+.viewPic img {
+	display: block;
+	vertical-align: top;
+	width: 350px;
+	height: 350px;
+}
+
+.viewPic .glass {
+	/*display: block;*/
+	position: absolute;
+	width: 175px;
+	height: 175px;
+	background: #feeea6;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+	top: 0;
+	display: none;
+}
+
+.zoomDiv {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	left: 370px;
+	top: 0;
+	border: 1px solid #ccc;
+	display: none;
+}
+
+.n5_scroll {
+	width: 354px;
+	height: 56px;
+	padding-top: 6px;
+	overflow: hidden;
+}
+
+.selected {
+	margin-top: 15px;
+	height: 30px;
+	padding-left: 20px;
+	background: url(../img/index/save.png) no-repeat;
+	height: 30px;
+	line-height: 30px;
+	color: #998675;
+}
+
+.conn {
+	overflow: hidden;
+	width: 260px;
+}
+
+.conn span {
+	display: block;
+	float: left;
+	line-height: 36px;
+	color: #cc1d00;
+	padding-right: 7px;
+	font-size: 12px;
+}
+
+.phone01 {
+	display: block;
+	float: left;
+	width: 12px;
+	height: 17px;
+	margin: 9px 5px 0 0;
+	background: url(../img/index/iconKf.png) no-repeat scroll 0 0;
+}
+
+.iconNe {
+	display: block;
+	float: left;
+	width: 18px;
+	height: 18px;
+	background: #000;
+	margin: 8px 5px 0 0;
+	background: url(../img/index/iconKf.png) no-repeat scroll -25px 0;
+}
+
+
+/*轮播*/
+
+.n5_scroll {
+	width: 354px;
+	height: 56px;
+	padding-top: 6px;
+	overflow: hidden;
+}
+
+.n5_scroll .wrapBox {
+	position: relative;
+	width: 302px;
+	margin-right: 8px;
+	float: left;
+	overflow: hidden;
+	margin-left: 2px;
+	display: inline;
+}
+
+.wrapBox ul {
+	width: 671px;
+	height: 56px;
+	position: relative;
+	left: -120px;
+}
+
+.n5_scroll li {
+	float: left;
+	margin-right: 0px;
+	display: inline;
+	width: 61px;
+}
+
+.n5_scroll li img {
+	padding: 2px;
+	border: 1px solid #ccc;
+	width: 50px;
+	height: 50px;
+}
+
+.n5_scroll li img:hover {
+	border: 2px solid #ff6600;
+	padding: 1px;
+}
+
+.n5_scroll .control {
+	width: 18px;
+	height: 54px;
+	display: inline-block;
+	float: left;
+	padding-right: 3px;
+	cursor: pointer;
+	margin-top: 0px;
+	background: url(../img/main/mainCon.png);
+}
+
+.n5_scroll .cL {
+	background-position: -142px -116px;
+}
+
+.n5_scroll .cR {
+	background-position: -167px -116px;
+}
+
+.goodsName {
+	width: 810px;
+	float: right;
+	padding-bottom: 8px;
+}
+
+.goodsName h1 {
+	font-size: 18px;
+	color: #444;
+	font-family: 'microsoft yahei', Verdana, Arial, Helvetica, sans-serif;
+	line-height: 1.5em;
+	font-weight: 500;
+}
+
+.goodsName h1 font {
+	font-size: 18px;
+	color: #444;
+	font-family: 'microsoft yahei', Verdana, Arial, Helvetica, sans-serif;
+	line-height: 1.5em;
+	font-weight: 500;
+	color: red;
+	padding-right: 5px;
+}
+
+.goodsName h1 b {
+	color: #de2507;
+	padding-right: 8px;
+	margin-right: 8px;
+	position: relative;
+	font-size: 18px;
+}
+
+.goodsName span {
+	font-size: 14px;
+	color: #999;
+	font-family: 'microsoft yahei', Verdana, Arial, Helvetica, sans-serif;
+	line-height: 1.5em;
+}
+
+
+/*商品表单详情*/
+
+.goodsPay {
+	width: 610px;
+	float: left;
+	position: relative;
+	margin-left: 18px;
+	margin-top: 10px;
+	color: #666;
+	font: 12px arial;
+}
+
+.goodsPay ul {
+	overflow: hidden;
+}
+
+.goodsPay li {
+	line-height: 30px;
+	height: 30px;
+	clear: both;
+	font-family: "宋体";
+	float: left;
+	width: 100%;
+}
+
+.goodsPay span {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 18px;
+	color: #de2507;
+	font-weight: bold;
+	padding-right: 5px;
+	display: inline-block;
+	float: left;
+}
+
+.priceNow {
+	background: #f7f7f7;
+}
+
+.goodsPay .dt {
+	float: left;
+	width: 72px;
+	text-align: right;
+	line-height: 30px;
+}
+
+.goodsPay .dd {
+	float: left;
+	line-height: 30px;
+	width: 520px;
+}
+
+.countDd font {
+	float: left;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 18px;
+	color: #cc1d00;
+	font-weight: bold;
+}
+
+.countDd span.unit-price {
+	font-size: 12px;
+	margin: 2px 0 0 5px;
+	padding-left: 8px;
+	font-weight: 400;
+	position: relative;
+}
+
+.iblock {
+	display: inline-block;
+	line-height: 18px;
+	margin: 6px 0 0px 20px;
+	color: #938DCD;
+	font-size: 12px;
+}
+
+.iblock em {
+	color: #fff;
+	background: #B3AFE1;
+	padding: 2px 4px;
+	border-radius: 3px;
+	margin-right: 5px;
+}
+
+.oldPrice {
+	background: #f7f7f7;
+}
+
+.sumSale {
+	line-height: 22px;
+	height: auto;
+	padding-bottom: 6px;
+	background: #f7f7f7;
+}
+
+.sumSale .dd a.login {
+	color: #fff;
+	display: inline-block;
+	padding: 0px 3px;
+	background: #cc1d00;
+	line-height: 20px;
+	margin-right: 0px;
+}
+
+.goodsPay div.ass1 span {
+	display: inline-block;
+	padding-left: 12px;
+	font-family: "宋体";
+	color: #999;
+}
+
+div.ass1 em {
+	font-style: normal;
+	color: #ff6d55;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+.ass1 i {
+	color: #999;
+	font-size: 12px;
+	padding-left: 15px;
+	line-height: 30px;
+}
+
+.ass1 span {
+	font-size: 12px;
+	margin: 2px 0 0 5px;
+	padding-left: 8px;
+	font-weight: 400;
+	position: relative;
+}
+
+.sumChoose {
+	padding: 6px 0px;
+	height: auto;
+}
+
+li.sumChoose i {
+	letter-spacing: 23px;
+	font-family: SimSun;
+}
+
+.sumChoose a {
+	font-size: 12px;
+	display: inline-block;
+	border: 1px solid #ddd;
+	padding: 3px 6px;
+	color: #666;
+	text-align: center;
+	height: 24px;
+	line-height: 24px;
+	vertical-align: middle;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+.sumChoose a.hover {
+	font-size: 12px;
+	border: 2px solid #ff1d02;
+	padding: 2px 5px;
+	color: #666;
+	text-align: center;
+	text-decoration: none;
+	background: url(../img/index/priceOn.gif) no-repeat right bottom;
+}
+
+.tc {
+	margin-bottom: 5px;
+}
+
+.sumChoose div.dd .oDiv {
+	position: relative;
+	float: left;
+	display: inline-block;
+}
+
+.sunNum .dd {
+	font-size: 0px;
+}
+
+.sunNum a {
+	display: inline-block;
+	border: 1px solid #ddd;
+	width: 20px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	color: #666;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 14px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.sunNum .minus {
+	border-right: none;
+}
+
+.sunNum .add {
+	border-left: none;
+}
+
+#dddiv input {
+	border: 1px solid #ddd;
+	width: 40px;
+	height: 24px;
+	line-height: 24px;
+	display: inline-block;
+	text-align: center;
+	font-size: 14px;
+	vertical-align: middle;
+	resize: none;
+	padding: 0;
+	outline: none;
+}
+#dddiv a,#dddiv input{
+	float: left;
+}
+#dddiv span{
+	line-height: 25px;
+	font-size: 14px;
+	vertical-align: top;
+	padding-left: 10px;
+	display: none;
+}
+.buybtn {
+	margin-top: 10px;
+	padding-left: 10px;
+}
+
+.btnMain {
+	width: 160px;
+	height: 42px;
+	line-height: 42px;
+	background: #cc1d00;
+	font-size: 20px;
+	color: #fff;
+	font-weight: bold;
+	display: inline-block;
+	padding: 4px 10px;
+	text-align: center;
+	margin-right: 10px;
+}
+
+.reminder {
+	clear: both;
+	font-size: 12px;
+	line-height: 24px;
+	color: #666;
+	padding-top: 10px;
+	text-indent: 8px;
+	float: left;
+}
+
+.bzBox {
+	position: absolute;
+	top: 0px;
+	right: -200px;
+	width: 175px;
+}
+
+.bzBox img {
+	vertical-align: top;
+}
+
+
+/**/

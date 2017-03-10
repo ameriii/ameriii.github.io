@@ -1,0 +1,274 @@
+body {
+	background: #fff;
+}
+
+.head-top {
+	border-bottom: 1px solid #d10000;
+}
+
+.cartMain {
+	width: 1190px;
+	margin: 0 auto;
+	border: 1px solid #c97070;
+	margin-top: 20px;
+}
+
+.myCart h4 {
+	background: #c97070;
+	height: 28px;
+	line-height: 28px;
+	padding-left: 15px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: Microsoft Yahei, "微软雅黑";
+}
+
+.cartMain input[type='checkbox'] {
+	vertical-align: middle;
+	margin-right: 5px;
+	border: 1px #ccc solid;
+	color: #333;
+	line-height: 19px;
+	text-align: left;
+	font-size: 12px;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.cartWrap p {
+	font-size: 12px;
+	color: #444;
+}
+
+.cartWrap {
+	padding: 20px;
+}
+
+.myCart table {
+	width: 100%;
+	margin: 10px 0px 0px 0px;
+	border-collapse: collapse;
+}
+
+.myCart thead td {
+	background-color: #eee;
+	height: 28px;
+	line-height: 28px;
+	color: #444;
+	font-size: 12px;
+	padding: 0px 5px;
+}
+
+.myCart table td {
+	border: 1px solid #ccc;
+	font-size: 12px;
+	text-align: center;
+}
+
+.myCart table td:first-child {
+	text-align: left;
+}
+
+.saleTd {
+	padding: 3px;
+	background: #e0f2f1;
+	border-radius: 5px;
+	height: 28px;
+	line-height: 28px;
+	color: #00a5b1;
+}
+
+.saleTd em {
+	display: inline-block;
+	background: #6bcbd2;
+	line-height: 20px;
+	padding: 0px 8px;
+	height: 20px;
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+	margin: 4px 8px;
+	float: left;
+	border-radius: 5px;
+}
+
+td span {
+	display: inline-block;
+	border: 1px solid #74ced4;
+	background: #fff;
+	line-height: 20px;
+	padding: 0px 4px;
+	height: 20px;
+	text-align: center;
+	color: #74ced4;
+	font-size: 12px;
+	margin: 3px 20px;
+	font-weight: normal;
+}
+
+.tdTop {
+	height: 10px;
+	padding: 0;
+}
+
+.sumChoose div.dd .oDiv {
+	position: relative;
+	float: left;
+	display: inline-block;
+}
+
+.sunNum {
+	width: 84px;
+	margin: 0 auto;
+}
+
+.sunNum div {
+	overflow: hidden;
+}
+
+.sunNum .dd {
+	font-size: 0px;
+}
+
+.sunNum a {
+	display: inline-block;
+	border: 1px solid #ddd;
+	width: 20px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	color: #666;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 14px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.sunNum .minus {
+	float: left;
+	border-right: none;
+	background-color: #eee;
+}
+
+.sunNum .add {
+	border-left: none;
+	background-color: #eee;
+}
+
+.sunNum input {
+	float: left;
+	border: 1px solid #ddd;
+	width: 40px;
+	height: 24px;
+	line-height: 24px;
+	display: inline-block;
+	text-align: center;
+	font-size: 14px;
+	vertical-align: middle;
+	resize: none;
+	padding: 0;
+	outline: none;
+}
+
+.dddiv a,
+.dddiv input {
+	float: left;
+}
+
+.dddiv span {
+	line-height: 25px;
+	font-size: 14px;
+	vertical-align: top;
+	padding-left: 10px;
+	display: none;
+}
+
+.goodlist td {
+	padding: 10px;
+}
+
+.goodlist td input:first-child {
+	display: block;
+	float: left;
+	margin-top: 20px;
+}
+
+.goodlist td img {
+	display: block;
+	width: 52px;
+	height: 52px;
+	vertical-align: top;
+	float: left;
+	border: 1px solid #bbb;
+	margin-right: 10px;
+}
+
+.goodlist td p {
+	float: left;
+	width: 360px;
+	/*text-indent: 10px;*/
+}
+
+.goodlist .price,
+.goodlist .totalPrice {
+	color: #444;
+	font-size: 16px;
+	font-weight: bold;
+	border: none;
+}
+
+.goodlist .totalPrice {
+	color: #e52100;
+}
+
+.delete {
+	color: #0064ed;
+}
+
+
+/*购物栏总计部分*/
+
+.carAccount {
+	position: relative;
+	width: 100%;
+	height: 45px;
+	background-color: #f0f0f0;
+	margin-top: 10px;
+}
+.carAccount .acountL span{
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 20px;
+	line-height: 45px;
+	color: #333;
+}
+.acountL a{
+	color: #0064ed;
+}
+.acountR {
+	float: right;
+	margin-top: -45px;
+}
+.money em{
+	color: #e52100;
+font-size: 20px;
+font-weight: bold;
+vertical-align: middle;
+font-family: Verdana, Geneva, sans-serif;
+font-style: normal;	
+}
+.acountR .accountBtn{
+	display: inline-block;
+width: 140px;
+height: 45px;
+background-color: #cf2e13;
+text-align: center;
+line-height: 45px;
+color: #fff;
+font-family: Microsoft Yahei,"微软雅黑";
+font-size: 17px;
+border: none;
+cursor: pointer;
+}

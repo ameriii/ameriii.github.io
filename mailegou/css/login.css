@@ -1,0 +1,37 @@
+.botCont li:first-child{
+	overflow: hidden;
+}
+.forget{
+	float: right;
+}
+.voiceVer{
+	text-align: left;
+	color: #999;
+}
+.regMsg li{
+	position: relative;
+}
+.regMsg label{
+	text-indent: -9999px;
+top: 0px;
+left: 0px;
+display: block;
+width: 32px;
+height: 32px;
+position: absolute;
+background: url(../img/index/tegPng.png) no-repeat 0px -52px;
+}
+.regMsg .pl{
+	padding-left: 32px;
+	
+}
+.pl input{
+	width: 240px;
+}
+.regMsg .pass{
+background: url(../img/index/tegPng.png) ;
+	
+}
+.alertmsg{
+	color: #ff6b52;
+}

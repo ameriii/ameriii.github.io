@@ -1,0 +1,729 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: arial sans-serif;
+	background: #f3f3f3;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+a,
+span,
+p,
+dd {
+	text-decoration: none;
+	color: #999;
+	font-size: 12px;
+}
+
+ul,
+dl,
+dd,em,i,
+p,h1,
+h3,
+h2,h4 {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/*网站顶部  头部部分*/
+
+header .site-top {
+	background: #f5f5f5;
+	min-width: 1190px;
+}
+
+header .site-top .bgwrap {
+	width: 1190px;
+	height: 36px;
+	margin: 0 auto;
+	line-height: 36px;
+}
+
+header .bgwrap a:hover,
+header .navMain a:hover,
+footer .article .link a:hover {
+	color: #CB351A;
+}
+
+.site-top .tl {
+	float: left;
+}
+
+.site-top .tl a {
+	float: left;
+	margin-right: 10px;
+}
+
+.site-top .tr {
+	float: right;
+}
+
+.tl> a i {
+	display: block;
+	float: left;
+	width: 15px;
+	height: 36px;
+	background: url(../img/index/icon_index.png) 0 11px no-repeat;
+	margin-right: 4px;
+}
+
+
+.tl> a.login {
+	color: #CB351A;
+	margin-right: 0;
+}
+.tl > a.logged{
+	color: #999;
+}
+.tl > a.logged:hover{
+	color: #CB351A;
+}
+.tl a.pic_login {
+	display: block;
+	float: left;
+	width: 16px;
+	height: 36px;
+	margin-right: 4px;
+}
+
+.tl .qq {
+	background: url(../img/index/icon_index.png) -378px 10px no-repeat;
+}
+
+.tl .ali {
+	background: url(../img/index/icon_index.png) -414px 10px no-repeat;
+}
+
+.tl .aq360 {
+	background: url(../img/index/icon_index.png) -449px 10px no-repeat;
+}
+
+.tl .sina {
+	background: url(../img/index/icon_index.png) -485px 10px no-repeat;
+}
+
+.tl span {
+	float: left;
+	margin-left: 10px;
+	line-height: 36px;
+}
+
+.tl .phone {
+	font-family: "microsoft yahei";
+	font-size: 14px;
+	margin-left: 5px;
+}
+
+.tr div.myAccont,
+.tr div.myGou {
+	position: relative;
+	float: left;
+	cursor: pointer;
+	border: 1px solid #f5f5f5;
+	border-bottom: none;
+}
+
+.tr .myAccont a {
+	padding: 0 0 0 11px;
+}
+
+.tr div.changeColor {
+	background: #fff;
+	border: 1px solid #ccc;
+	border-bottom: none;
+}
+
+.countList {
+	position: absolute;
+	top: 36px;
+	z-index: 5;
+	background: white;
+	border: 1px solid #ccc;
+	border-top: none;
+	padding: 0 0 5px 10px;
+	left: -1px;
+	display: none;
+}
+
+.countList li {
+	width: 83px;
+	height: 24px;
+	line-height: 24px;
+}
+
+.tr div.myAccont i {
+	width: 13px;
+	height: 20px;
+	padding: 3px 5px 3px 1px;
+	background: url(../img/index/icon_index.png) no-repeat -81px 0px;
+}
+
+.tr div.collection {
+	float: left;
+}
+
+.tr div.collection i {
+	cursor: pointer;
+	width: 13px;
+	height: 17px;
+	margin: 8px 0 0 5px;
+	vertical-align: baseline;
+	float: left;
+	background: url(../img/index/icon_index.png);
+	background-position: -66px -21px;
+}
+
+.tr .myGou .gouApp {
+	position: absolute;
+	width: 240px;
+	height: auto;
+	z-index: 2;
+	top: 36px;
+	right: 1px;
+	display: none;
+}
+
+.tr div.myGou i {
+	float: left;
+	cursor: pointer;
+	width: 13px;
+	height: 17px;
+	padding: 2px 1px 1px 6px;
+	background: url(../img/index/icon_index.png);
+	background-position: -18px 2px;
+	margin-top: 8px;
+}
+
+.tr div.myGou i:hover {
+	background-position: -38px 2px;
+}
+
+.tr .gouApp img {
+	display: block;
+	vertical-align: top;
+	border: 1px solid #ccc;
+	border-top: none;
+}
+
+.tr a {
+	float: left;
+	padding: 0 5px;
+}
+
+.tr span {
+	float: left;
+	font-size: 14px;
+	color: #ddd;
+}
+
+
+/*网站顶部2  头部部分*/
+
+.head-top {
+	background: #fff;
+	min-width: 1190px;
+}
+
+.alignCenter {
+	width: 1190px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.alignCenter a img {
+	display: block;
+}
+
+.alignCenter> a:first-child {
+	float: left;
+}
+
+.alignCenter .head-middle {
+	float: left;
+}
+
+.alignCenter> a:last-child {
+	float: right;
+}
+
+.alignCenter form {
+	overflow: hidden;
+}
+
+.alignCenter form .search {
+	float: left;
+	width: 400px;
+	height: 35px;
+	border: 2px solid #cb1e00;
+	outline: none;
+	line-height: 35px;
+	font-size: 14px;
+	text-indent: 11px;
+	color: rgb(153, 153, 153);
+	padding: 0;
+}
+
+.alignCenter form .search:hover {
+	border-color: rgb(102, 102, 102);
+}
+
+.alignCenter form input:last-child {
+	cursor: pointer;
+	float: left;
+	width: 90px;
+	height: 39px;
+	background: #cc1d00;
+	color: #fff;
+	outline: none;
+	font-size: 16px;
+	font-family: Microsoft Yahei, "microsoft yahei";
+	border: 0;
+}
+
+.head-middle {
+	position: absolute;
+	top: 35px;
+	left: 355px;
+}
+
+.head-middle p {
+	line-height: 26px;
+	margin: 0;
+}
+
+.head-middle a {
+	padding: 0 4px;
+	font: 12px;
+	font-family: arial;
+}
+
+.head-middle a:nth-child(1),
+.head-middle a:nth-child(2) {
+	color: #ef0000;
+}
+
+
+/*头部第三部分 导航*/
+
+header nav {
+	background: #fff;
+}
+
+header nav .navMain {
+	width: 1190px;
+	height: 36px;
+	margin: 0 auto;
+	z-index: 5;
+}
+
+
+/*全部商品分类*/
+
+.navMain> div:first-child {
+	width: 180px;
+	height: 36px;
+	text-align: center;
+	background: #CB351A;
+	font-size: 15px;
+	line-height: 36px;
+	font-family: "microsoft yahei";
+	float: left;
+	color: #fff;
+	position: relative;
+}
+
+.navMain ul {
+	position: relative;
+	overflow: hidden;
+	float: left;
+}
+
+.navMain ul.menu-list li {
+	float: left;
+	padding: 1.2px 0;
+}
+
+.navMain ul li a {
+	font-size: 16px;
+	height: 36px;
+	line-height: 36px;
+	font-family: "微软雅黑";
+	padding: 0 12px;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 12px;
+	color: #333;
+}
+
+.navMain ul.navMain-list li {
+	float: left;
+}
+
+.navMain ul li i {
+	font-style: normal;
+}
+
+.underLine {
+	width: 32px;
+	height: 3px;
+	position: absolute;
+	margin: 0 12px;
+	border-bottom: 2px solid #c8391d;
+	bottom: 0;
+	overflow: visible;
+}
+
+.upward {
+	position: absolute;
+	display: block;
+	left: 50%;
+	top: 0px;
+	line-height: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0px 3px 3px;
+	margin-left: -3px;
+	border-color: #c8391d transparent;
+}
+
+.navMain .nav-cart {
+	float: right;
+	width: 198px;
+	height: 34px;
+	border: 1px solid #e4e4e4;
+	text-align: center;
+	line-height: 34px;
+	background: #f9f9f9;
+}
+
+.navMain .nav-cart a {
+	color: #7a7a7a;
+}
+
+
+/*左边菜单*/
+
+.leftmenu {
+	position: relative;
+	z-index: 5;
+	width: 180px;
+	height: 480px;
+}
+
+.leftmenu ul {
+	overflow: hidden;
+	width: 180px;
+	height: 480px;
+	background: #cb3e25;
+}
+
+.leftmenu li {
+	width: 180px;
+	height: 49px;
+	background: #cb3e25;
+	border-bottom: 1px solid #b82f17;
+	border-top: 1px solid #da5a44;
+	overflow: hidden;
+	position: relative;
+	z-index: 5;
+}
+
+.leftmenu li i {
+	display: block;
+	width: 39px;
+	height: 49px;
+	float: left;
+	margin-right: 10px;
+	background: url(../img/index/icon_index.png) no-repeat;
+}
+
+.leftmenu li i.bg1 {
+	background-position: right -50px;
+}
+
+.leftmenu li i.bg2 {
+	background-position: right -92px;
+}
+
+.leftmenu li i.bg3 {
+	background-position: right -266px;
+}
+
+.leftmenu li i.bg4 {
+	background-position: right -134px;
+}
+
+.leftmenu li i.bg5 {
+	background-position: right -179px;
+}
+
+.leftmenu li i.bg6 {
+	background-position: right -223px;
+}
+
+.leftmenu li i.bg7 {
+	background-position: right -310px;
+}
+
+.leftmenu li i.bg8 {
+	background-position: right -394px;
+}
+
+.leftmenu li i.bg9 {
+	background-position: right -350px;
+}
+
+.leftmenu h3,
+.leftmenu p {
+	text-align: left;
+}
+
+.leftmenu .menu-list h3,
+.leftmenu .menu-list p {
+	height: 20px;
+	line-height: 20px;
+}
+
+.leftmenu h3 {
+	margin-top: 5px;
+}
+
+.leftmenu .menu-list li a {
+	/*font-size: 16px;*/
+	font-size: 12px;
+	height: 20px;
+	color: white;
+	padding: 0;
+}
+
+.leftmenu .menu-list li h3 a {
+	line-height: 20px;
+	font-weight: 500;
+}
+
+.leftmenu .menu-list li p a {
+	color: #eca598;
+	line-height: 15px;
+}
+
+
+/*菜单hover滑出页面*/
+
+.addCont {
+	background: #fff;
+	box-shadow: 1px 0 2px #978d8d inset;
+	height: 480px;
+	width: 400px;
+	position: absolute;
+	left: 170px;
+	top: 0px;
+	overflow: hidden;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	z-index: 5;
+	font-family: "microsoft yahei";
+	display: none;
+	z-index: 2;
+}
+
+.addCont .contBox {
+	padding: 12px 8px 12px 15px;
+	line-height: 20px;
+}
+
+.contBox p {
+	border-bottom: 1px dashed #ccc;
+	padding-bottom: 8px;
+	margin-bottom: 12px;
+	font-family: "microsoft yahei";
+}
+
+.contBox p strong {
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	height: 22px;
+	color: black;
+}
+
+.contBox p a {
+	margin-right: 17px;
+	line-height: 20px;
+	display: inline-block;
+	color: #666;
+}
+
+.contBox .on1 {
+	color: #cb3e25;
+}
+
+
+/*底部*/
+
+footer {
+	min-width: 1190px;
+	padding-bottom: 15px;
+	background: #fff;
+}
+
+.prowrap {
+	min-width: 1190px;
+	border-top: 1px solid #e4e4e4;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+footer .promise {
+	/*display: block;*/
+	width: 1190px;
+	height: 46px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+footer dl {
+	float: left;
+}
+
+footer dl dt {
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 26px;
+}
+
+footer dl dd {
+	line-height: 22px;
+}
+
+footer .pro1 {
+	padding-left: 35px;
+	width: 215px;
+}
+
+footer .pro2 {
+	width: 245px;
+}
+
+footer .pro3 {
+	width: 205px;
+}
+
+.promise dl span {
+	display: block;
+	width: 45px;
+	height: 45px;
+	float: left;
+	margin-right: 10px;
+}
+
+.pro1 span {
+	background: url(../img/index/icon_index.png) -58px -345px no-repeat;
+}
+
+.pro2:nth-child(2) span {
+	background: url(../img/index/icon_index.png) -113px -345px no-repeat;
+}
+
+.pro2:nth-child(3) span {
+	background: url(../img/index/icon_index.png) -166px -345px no-repeat;
+}
+
+.pro2:nth-child(4) span {
+	background: url(../img/index/icon_index.png) -220px -345px no-repeat;
+}
+
+.pro3 span {
+	background: url(../img/index/icon_index.png) -274px -345px no-repeat;
+}
+
+
+/*底部第二部分*/
+
+footer .article .link {
+	width: 1100px;
+	padding: 30px 45px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+footer .link dl {
+	width: 200px;
+}
+
+footer .link dd {
+	line-height: 20px;
+}
+
+footer .link .gouApp {
+	width: 95px;
+	text-align: center;
+}
+
+footer .link .gouApp img {
+	width: 95px;
+	height: 95px;
+}
+
+
+/*底部第三部分*/
+
+footer .about .abLink {
+	background: #444851;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.about .abLink a {
+	padding: 0 10px;
+}
+
+.about .abLink a:hover {
+	color: white;
+}
+
+.about .abLink span {
+	color: #555;
+}
+
+.about p {
+	margin: 0;
+	line-height: 24px;
+	color: black;
+	text-align: center;
+}
+
+.about p a,
+.about p span {
+	color: black;
+}
+
+.about p a img {
+	vertical-align: top;
+}
+
+
+/*底部第四部分*/
+
+.about aside {
+	padding-top: 20px;
+	text-align: center;
+}
+
+.about aside a img {
+	width: 112px;
+	height: 60px;
+	border: 1px solid #ccc;
+}
+
+.about aside a {
+	width: 120px;
+	text-align: center;
+}
