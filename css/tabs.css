@@ -1,0 +1,74 @@
+﻿*{
+    padding:0;
+    margin:0;
+}
+body{
+    font-family:'Microsoft YaHei';
+}
+.tabs{
+    width:550px;
+    margin:20px auto auto auto;
+}
+div.tab-header{
+    height:25px;
+}
+.tabs-list{
+    height:283px;          /*通过计算得出，label+table高度总和*/
+    position:relative;     /*用来给后面table以此绝对定位*/
+}
+.tabs-list li{
+    display:block;     /*去掉列表样式*/
+    float:left;
+}
+.tabs-list input[type="radio"]{
+    display:none;          /*去掉单选框样式*/
+}
+.tabs-list label{
+    cursor:pointer;
+    width:100px;
+    height:30px;
+    display:block;
+    text-align:center;
+    line-height:30px;
+    background-color:#f5f5f5;
+    border-radius:5px 5px 0 0;
+    color:#535353;
+    font-size:14px;
+    position:relative;
+    z-index:1;               /*用来覆盖掉table的边框在此处显示*/
+}
+.tabs-list input:checked ~ label{   /*被选中时显示的效果*/
+    background-color:white;
+    border:1px solid #d5d5d5;
+    border-bottom:none;
+}
+.tabs-list .content{
+    display:none;            /*先将列表全部隐藏，使之在选中时猜显示出来*/
+    position:absolute;
+    top:30px;
+    left:0;
+    height:250px;
+    width:500px;
+    border:1px solid #d5d5d5;
+    border-radius:0 0 5px 5px;
+    z-index:0;
+}
+.tabs-list input:checked ~ .content{     /*input在被选中时猜显示出相应的content*/
+    display:block;
+}
+.table0{
+    width:450px;
+    height:220px;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10px;
+    border-collapse:collapse;
+}
+table[class^="table"] td{
+    border:1px solid #d5d5d5;
+}
+table[class^="table"] td:hover{
+    background-color: #f5f5f5;
+}
+
